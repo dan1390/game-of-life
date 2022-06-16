@@ -1,8 +1,18 @@
 plugins {
     id 'java'
+    id "application"
 }
 
-group 'org.example'
+apply plugin : "java"
+ext {
+    javaMainClass = "org.daniel.gameoflife.Application"
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+group 'org.daniel'
 version '1.0-SNAPSHOT'
 
 repositories {

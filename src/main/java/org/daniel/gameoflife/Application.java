@@ -15,6 +15,7 @@ public class Application {
     public static void main(String[] args) {
         var gameBoard = new FixedDimensionGameBoard(new BlinkerSeed());
         var gameHandler = new CompleteIterationGameHandler(gameBoard);
+
         runGame(gameHandler);
     }
 
